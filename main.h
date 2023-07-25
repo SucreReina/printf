@@ -36,15 +36,13 @@
 
 /**
  *
- *  * struct fmt - Struct op
+ * struct fmt - Struct op
  *
- *   *
+ * @fmt: The format.
  *
- *    * @fmt: The format.
+ * @fn: The function associated.
  *
- *     * @fn: The function associated.
- *
- *      */
+ */
 
 struct fmt
 
@@ -58,17 +56,15 @@ struct fmt
 
 
 
-/**
+/*
  *
- *  * typedef struct fmt fmt_t - Struct op
+ * typedef struct fmt fmt_t - Struct op*   
  *
- *   *
+ * @fmt: The format.
  *
- *    * @fmt: The format.
+ * @fm_t: The function associated.
  *
- *     * @fm_t: The function associated.
- *
- *      */
+ */
 
 typedef struct fmt fmt_t;
 
@@ -80,7 +76,7 @@ int handle_print(const char *fmt, int *i,
 		va_list list, char buffer[], int flags, int width, int precision, int size);
 
 
-/****** FUNCTIONS ******/
+/* FUNCTIONS */
 
 
 /* Funtions to print chars and strings */
@@ -195,7 +191,7 @@ int write_unsgnd(int is_negative, int ind,
 		int flags, int width, int precision, int size);
 
 
-/****** UTILS ******/
+/* UTILS */
 
 int is_printable(char);
 
